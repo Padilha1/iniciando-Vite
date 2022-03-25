@@ -1,5 +1,5 @@
-import {NavContent, NAV, GlobalStyle} from "../styles"
-import {material, octicons} from 'styled-icons'
+import {NavContent, NAV, GlobalStyle, SpaceDiv} from "../styles"
+import * as faBrands from '@styled-icons/fa-brands'
 
 
 export function NavBar() {
@@ -8,14 +8,14 @@ export function NavBar() {
         <NavContent>
             <GlobalStyle/>
             <NAV>
-                <h3>
+                <h3 color="white">
                         Padilha's Anime List
                 </h3>
-                <div className="social">
-                    <a href="">
-                        @styled-icons/boxicons-logos/Instagram
-                    </a>
-                </div>
+                <SpaceDiv>
+                    <a href="https://instagram.com/matheus.padilha" target="_blank"><faBrands.Instagram size="25"/></a>
+                    <a href="https://github.com/Padilha1" target="_blank"><faBrands.Github size="25"/></a>
+                    <a href="https://twitter.com/Pa__dilha" target="_blank"><faBrands.Twitter size="25"/></a>
+                </SpaceDiv>
             </NAV>
         </NavContent>
     );
