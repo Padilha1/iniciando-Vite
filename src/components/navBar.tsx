@@ -1,4 +1,4 @@
-import {NavContent, NAV, GlobalStyle, SpaceDiv} from "../styles"
+import {NavContent, NAV, GlobalStyle, SpaceDiv, Title} from "../styles"
 import * as faBrands from '@styled-icons/fa-brands'
 
 
@@ -8,9 +8,9 @@ export function NavBar() {
         <NavContent>
             <GlobalStyle/>
             <NAV>
-                <h3 color="white">
+                <Title>
                         Padilha's Anime List
-                </h3>
+                </Title>
                 <SpaceDiv>
                     <a href="https://instagram.com/matheus.padilha" target="_blank"><faBrands.Instagram size="25"/></a>
                     <a href="https://github.com/Padilha1" target="_blank"><faBrands.Github size="25"/></a>
@@ -20,6 +20,5 @@ export function NavBar() {
         </NavContent>
     );
 }
-
 
 
