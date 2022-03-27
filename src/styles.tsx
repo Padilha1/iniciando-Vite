@@ -25,11 +25,18 @@ export const GlobalStyle = createGlobalStyle`
         color: #B0A8B9;
         text-decoration:none;
     }
-
+    @media screen and (min-width:390px){
+    Section  {
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        
+        }
+    }
 `;
 
-export const Title = styled.h1`
-    font-size: 1.2 em;
+export const Title = styled.h3`
+    font-size: 1 em;
+    color: #B0A8B9;
 `;
 
 export const NavContent = styled.div`
@@ -48,4 +55,39 @@ export const SpaceDiv = styled.div`
     display: flex;
     justify-content: space-between;
     gap:1em;
+
+`
+
+export const Section = styled.section`
+    margin: 3em 0;
+    width:90%;
+    height:100vh;
+    text-align:center;
+    display:grid;
+    grid-template-columns:2fr 2fr;
+    justify-content: space-around;
+
+
+    
+`
+
+export const Img = styled.img`
+    width:15em;
+    border-radius:50px;
+`
+
+
+export const Div = styled.div`
+    h4{
+        margin-top:0;
+        margin-bottom:10px;
+    }
+    p{
+        margin-top:0;
+        margin-bottom:15px;
+    }
+
+    color:#F3C5FF;
+
+    
 `
